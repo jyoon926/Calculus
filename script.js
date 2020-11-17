@@ -71,5 +71,5 @@ function RRAM(left, right, n, func) {
 
 
 function output(string) {
-    document.getElementById("output").innerHTML = "Output: " + string;
+    document.getElementById("output").innerHTML = "Answer: " + string;
 }

@@ -31,7 +31,7 @@
 
 * {
   font-family: 'Radio Grotesk', sans-serif;
-  color: black;
+  color: #22223b;
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -44,7 +44,6 @@ html {
 
 body {
   padding: 4vw;
-  background: #ccc;
 }
 
 h1 {
@@ -70,7 +69,7 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-  border: 2px solid black;
+  border: 2px solid #22223b;
 }
 
 select {
@@ -103,15 +102,15 @@ select {
 }
 
 select:focus {
-  border: 2px solid black;
+  border: 2px solid #22223b;
   border-radius: 0 !important;
 }
 
 .button {
-  background-color: black;
+  background-color: #22223b;
   color: white;
   padding: 7px 20px;
-  border: 2px solid black;
+  border: 2px solid #22223b;
   -webkit-transition: background-color .3s, color .3s;
   transition: background-color .3s, color .3s;
   border-radius: calc(41px / 2);
@@ -121,7 +120,7 @@ select:focus {
 .button:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
-  color: black;
+  color: #22223b;
 }
 
 #form {
@@ -160,16 +159,11 @@ h3 {
 table {
   width: 100%;
   border-collapse: collapse;
-  border: 2px solid black;
-}
-
-table th {
-  background: black;
-  color: white;
+  border: 2px solid #22223b;
 }
 
 table th, table td {
-  border: 2px solid black;
+  border: 2px solid #22223b;
   border-collapse: collapse;
   text-align: left;
   -webkit-box-sizing: border-box;
@@ -177,16 +171,45 @@ table th, table td {
   padding: 4px 8px;
 }
 
+table th {
+  background: rgba(34, 34, 59, 0.15);
+  padding: 16px 8px;
+}
+
+#output {
+  padding: 20px 40px;
+  border: 2px solid red;
+  margin-top: 5px;
+}
+
+#output i {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 @media screen and (max-width: 600px) {
   body {
     padding: 1em;
+    padding-bottom: 44px;
   }
   h1 {
     font-size: 2.5em;
-    padding-bottom: 22px;
+    padding: 22px 0 44px;
   }
   h3 {
     font-size: 1.75em;
   }
+  #output {
+    margin-bottom: 2em;
+  }
+}
+
+#bg {
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: radial-gradient(ellipse at top, #ede1da, transparent), radial-gradient(ellipse at bottom, #c79e95, transparent);
 }
 /*# sourceMappingURL=styles.css.map */

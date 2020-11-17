@@ -1,3 +1,6 @@
+$light: #ede1da;
+$dark: #22223b;
+$accent: #4a4e69;
 @font-face{
     font-family:'MonumentGrotesk';
     src:url("fonts/MonumentGrotesk-Medium.woff2") format("woff2"),url("fonts/MonumentGrotesk-Medium.woff") format("woff");
@@ -28,7 +31,7 @@
   
 * {
     font-family: 'Radio Grotesk', sans-serif;
-    color: black;
+    color: $dark;
     margin: 0; padding: 0;
     font-weight: 400;
 }
@@ -38,7 +41,6 @@ html {
 }
 body {
     padding: 4vw;
-    background: #ccc;
 }
 h1 {
     padding-bottom: 4vw;
@@ -58,7 +60,7 @@ input[type=text] {
     background-color: white;
     transition: border .3s;
     &:focus {
-        border: 2px solid black;
+        border: 2px solid $dark;
     }
 }
 select {
@@ -79,22 +81,22 @@ select {
     background-color: white;
     transition: border .3s;
     &:focus {
-        border: 2px solid black;
+        border: 2px solid $dark;
         border-radius: 0 !important;
     }
 }
 .button {
-    background-color: black;
+    background-color: $dark;
     color: white;
     padding: 7px 20px;
-    border: 2px solid black;
+    border: 2px solid $dark;
     transition: background-color .3s, color .3s;
     border-radius: calc(41px / 2);
     margin-top: 5px;
     &:hover {
         cursor: pointer;
         background-color: rgba(0,0,0,0);
-        color: black;
+        color: $dark;
     }
 }
 #form {
@@ -120,29 +122,51 @@ h3 {
 table {
     width: 100%;
     border-collapse: collapse;
-    border: 2px solid black;
-    th {
-        background: black;
-        color: white;
-    }
+    border: 2px solid $dark;
     th, td {
-        border: 2px solid black;
+        border: 2px solid $dark;
         border-collapse: collapse;
         text-align: left;
         box-sizing: border-box;
         padding: 4px 8px;
+    }
+    th {
+        background: rgba(34, 34, 59, 0.15);
+        padding: 16px 8px;
+    }
+}
+#output {
+    padding: 20px 40px;
+    border: 2px solid red;
+    margin-top: 5px;
+    i {
+        color: rgba(0,0,0,0.5);
     }
 }
 
 @media screen and (max-width: 600px) {
     body {
         padding: 1em;
+        padding-bottom: 44px;
     }
     h1 {
         font-size: 2.5em;
-        padding-bottom: 22px;
+        padding: 22px 0 44px;
     }
     h3 {
         font-size: 1.75em;
     }
+    #output {
+        margin-bottom: 2em;
+    }
+}
+
+#bg {
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background: radial-gradient(ellipse at top, $light, transparent),
+    radial-gradient(ellipse at bottom, #c79e95, transparent);
 }

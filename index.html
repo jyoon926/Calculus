@@ -8,6 +8,7 @@
     <link rel="icon" href="icon.svg">
 </head>
 <body>
+
     <h1>Riemann Sums -<br>Rectangular Approximation</h1>
     <form id="form">
         <select id="type" onchange="SetType()">
@@ -28,9 +29,10 @@
         <input onclick="calculateLRAM()" type="button" id="calculatelram" class="button" value="Calculate LRAM" />
         <input onclick="calculateMRAM()" type="button" id="calculatemram" class="button" value="Calculate MRAM" style="display:none;"/>
         <input onclick="calculateRRAM()" type="button" id="calculaterram" class="button" value="Calculate RRAM" style="display:none;" />
+        
+      <p id="output"><i>Answer</i></p>
     </form>
-    <p id="output"></p>
-    <h3>Math Object Methods</h3>
+    <h3>Math Operations</h3>
     <table>
         <tbody><tr>
           <th style="width:20%">Method</th>
@@ -130,6 +132,9 @@
         </tr>
         </tbody>
     </table>
+
+    <div id="bg"></div>
+
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="script.js"></script>
 </body>
