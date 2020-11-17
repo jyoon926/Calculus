@@ -35,7 +35,7 @@ function LRAM(left, right, n, func) {
     sum = 0;
 
     for (i = 0; i < n; i++) {
-        x = left + i * deltaX;
+        x = parseFloat(left) + i * deltaX;
         value = eval(func);
         sum += deltaX * value;
     }
