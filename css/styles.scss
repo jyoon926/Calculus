@@ -3,19 +3,19 @@ $dark: #22223b;
 $accent: #4a4e69;
 @font-face{
     font-family:'MonumentGrotesk';
-    src:url("fonts/MonumentGrotesk-Medium.woff2") format("woff2"),url("fonts/MonumentGrotesk-Medium.woff") format("woff");
+    src:url("../fonts/MonumentGrotesk-Medium.woff2") format("woff2"),url("fonts/MonumentGrotesk-Medium.woff") format("woff");
     font-weight:500;
     font-style:normal;
 }
 @font-face{
     font-family:'MonumentGrotesk';
-    src:url("fonts/MonumentGrotesk-Regular.woff2") format("woff2"),url("fonts/MonumentGrotesk-Regular.woff") format("woff");
+    src:url("../fonts/MonumentGrotesk-Regular.woff2") format("woff2"),url("fonts/MonumentGrotesk-Regular.woff") format("woff");
     font-weight:400;
     font-style:normal;
 }
 @font-face{
     font-family: 'circular';
-    src: url(fonts/764604c.woff2) format("woff2"),url(fonts/5b4d068.woff) format("woff");
+    src: url('../fonts/764604c.woff2') format("woff2"),url(fonts/5b4d068.woff) format("woff");
     font-weight:400;
     font-style:normal;
 }
