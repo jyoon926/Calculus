@@ -122,6 +122,11 @@ select {
     input {
         margin-bottom: 1em;
     }
+    label {
+        i {
+            opacity: 0.7;
+        }
+    }
 }
 
 h3 {
@@ -145,12 +150,16 @@ table {
     }
 }
 #output {
-    padding: 20px 40px;
-    border: 2px solid red;
-    margin-top: 5px;
+    letter-spacing: 0.75px;
     i {
-        color: rgba(0,0,0,0.5);
+        color: rgba(0,0,0,0.65);
     }
+}
+.display {
+    padding: 20px 40px;
+    margin-top: 5px;
+    border: 2px solid red;
+    background: linear-gradient(to top left, rgba(255,0,0,0.1), rgba(255,0,0,0));
 }
 
 #footer {

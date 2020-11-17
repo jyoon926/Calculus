@@ -161,6 +161,10 @@ select:focus {
   margin-bottom: 1em;
 }
 
+#form label i {
+  opacity: 0.7;
+}
+
 h3 {
   font-size: 2em;
   margin: 4vw 0 1em 0;
@@ -187,13 +191,19 @@ table th {
 }
 
 #output {
-  padding: 20px 40px;
-  border: 2px solid red;
-  margin-top: 5px;
+  letter-spacing: 0.75px;
 }
 
 #output i {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.display {
+  padding: 20px 40px;
+  margin-top: 5px;
+  border: 2px solid red;
+  background: -webkit-gradient(linear, right bottom, left top, from(rgba(255, 0, 0, 0.1)), to(rgba(255, 0, 0, 0)));
+  background: linear-gradient(to top left, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0));
 }
 
 #footer {

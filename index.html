@@ -23,21 +23,18 @@
             <option value="trap">Trapazoidal</option>
         </select>
 
-        <label for="left">a</label>
-        <input id="left" name="left" type="number" />
-        <label for="right">b</label>
-        <input id="right" name="right" type="number" />
+        <label for="a">Left bound</label>
+        <input id="a" name="a" type="number" required />
+        <label for="b">Right bound</label>
+        <input id="b" name="b" type="number" required />
         <label for="n">n</label>
-        <input id="n" name="n" type="number" />
-        <label for="function">Function - <i>e.g. x+4 or Math.sin(x)</i></label>
-        <input id="function" name="function" type="text" />
+        <input id="n" name="n" type="number" required />
+        <label for="function">Function <i>- Ex: Math.sin(x + 4)</i></label>
+        <input id="function" name="function" type="text" required />
 
-        <input onclick="calculateLRAM()" type="button" id="calculatelram" class="button" value="Calculate LRAM" />
-        <input onclick="calculateMRAM()" type="button" id="calculatemram" class="button" value="Calculate MRAM" style="display:none;"/>
-        <input onclick="calculateRRAM()" type="button" id="calculaterram" class="button" value="Calculate RRAM" style="display:none;" />
-        <input onclick="calculateTrap()" type="button" id="calculatetrap" class="button" value="Calculate Trapazoidal" style="display:none;" />
+        <input onclick="calculateRAM()" type="button" id="calculate" class="button" value="Calculate LRAM" />
         
-      <p id="output"><i>Answer</i></p>
+      <p id="output"></p>
     </form>
 
     <h3>Math Operations</h3>
@@ -149,6 +146,7 @@
     <div id="bg"></div>
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/math.js"></script>
 </body>
 </html>
