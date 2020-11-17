@@ -1,4 +1,4 @@
-$light: #ede1da;
+$light: #e8d2c5;
 $dark: #22223b;
 $accent: #4a4e69;
 @font-face{
@@ -177,5 +177,5 @@ table {
     position: fixed;
     top: 0; left: 0;
     background: radial-gradient(ellipse at top, $light, transparent),
-    radial-gradient(ellipse at bottom, #c79e95, transparent);
+    radial-gradient(ellipse at bottom, #c4958b, transparent);
 }
