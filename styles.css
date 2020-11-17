@@ -63,13 +63,23 @@ input[type=text] {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: white;
+  background-color: white !important;
   -webkit-transition: border .3s;
   transition: border .3s;
 }
 
 input[type=text]:focus {
   border: 2px solid #22223b;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
 }
 
 select {
