@@ -49,7 +49,8 @@ function MRAM(left, right, n, func) {
 
     for (i = 0; i < n; i++) {
         x = parseFloat(left) + (i * deltaX) + (deltaX / 2);
-        sum += deltaX * Math.sin(x);
+        value = eval(func);
+        sum += deltaX * value;
     }
 
     output(sum);
@@ -61,7 +62,8 @@ function RRAM(left, right, n, func) {
 
     for (i = 0; i < n; i++) {
         x = parseFloat(left) + i * deltaX + deltaX;
-        sum += deltaX * Math.sin(x);
+        value = eval(func);
+        sum += deltaX * value;
     }
 
     output(sum);
