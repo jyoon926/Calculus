@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riemann Sums - Rectangular Approximation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.svg">
+</head>
+<body>
+    <h1>Riemann Sums -<br>Rectangular Approximation</h1>
+    <form id="form">
+        <select id="type" onchange="SetType()">
+            <option value="lram">LRAM</option>
+            <option value="mram">MRAM</option>
+            <option value="mram">RRAM</option>
+        </select>
+
+        <label for="left">Left</label>
+        <input id="left" name="left" type="text" />
+        <label for="right">Right</label>
+        <input id="right" name="right" type="text" />
+        <label for="n">n</label>
+        <input id="n" name="n" type="text" />
+        <label for="function">Function - <i>e.g. Math.sin(x)</i></label>
+        <input id="function" name="function" type="text" />
+
+        <input onclick="calculateLRAM()" type="button" id="calculatelram" class="button" value="Calculate LRAM" />
+        <input onclick="calculateMRAM()" type="button" id="calculatemram" class="button" value="Calculate MRAM" style="display:none;"/>
+        <input onclick="calculateRRAM()" type="button" id="calculaterram" class="button" value="Calculate RRAM" style="display:none;" />
+    </form>
+    <h3>Math Object Methods</h3>
+    <table>
+        <tbody><tr>
+          <th style="width:20%">Method</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>abs(x)</td>
+          <td>Returns the absolute value of x</td>
+        </tr>
+        <tr>
+          <td>acos(x)</td>
+          <td>Returns the arccosine of x, in radians</td>
+        </tr>
+        <tr>
+          <td>acosh(x)</td>
+          <td>Returns the hyperbolic arccosine of x</td>
+        </tr>
+        <tr>
+          <td>asin(x)</td>
+          <td>Returns the arcsine of x, in radians</td>
+        </tr>
+        <tr>
+          <td>asinh(x)</td>
+          <td>Returns the hyperbolic arcsine of x</td>
+        </tr>
+        <tr>
+          <td>atan(x)</td>
+          <td>Returns the arctangent of x as a numeric value between -PI/2 and PI/2 radians</td>
+        </tr>
+        <tr>
+          <td>atan2(y, x)</td>
+          <td>Returns the arctangent of the quotient of its arguments</td>
+        </tr>
+        <tr>
+          <td>atanh(x)</td>
+          <td>Returns the hyperbolic arctangent of x</td>
+        </tr>
+        <tr>
+          <td>cbrt(x)</td>
+          <td>Returns the cubic root of x</td>
+        </tr>
+        <tr>
+          <td>ceil(x)</td>
+          <td>Returns x, rounded upwards to the nearest integer</td>
+        </tr>
+        <tr>
+          <td>cos(x)</td>
+          <td>Returns the cosine of x (x is in radians)</td>
+        </tr>
+        <tr>
+          <td>cosh(x)</td>
+          <td>Returns the hyperbolic cosine of x</td>
+        </tr>
+        <tr>
+          <td>exp(x)</td>
+          <td>Returns the value of E<sup>x</sup></td>
+        </tr>
+        <tr>
+          <td>floor(x)</td>
+          <td>Returns x, rounded downwards to the nearest integer</td>
+        </tr>
+        <tr>
+          <td>log(x)</td>
+          <td>Returns the natural logarithm (base E) of x</td>
+        </tr>
+        <tr>
+          <td>pow(x, y)</td>
+          <td>Returns the value of x to the power of y</td>
+        </tr>
+        <tr>
+          <td>round(x)</td>
+          <td>Rounds x to the nearest integer</td>
+        </tr>
+        <tr>
+          <td>sin(x)</td>
+          <td>Returns the sine of x (x is in radians)</td>
+        </tr>
+        <tr>
+          <td>sinh(x)</td>
+          <td>Returns the hyperbolic sine of x</td>
+        </tr>
+        <tr>
+          <td>sqrt(x)</td>
+          <td>Returns the square root of x</td>
+        </tr>
+        <tr>
+          <td>tan(x)</td>
+          <td>Returns the tangent of an angle</td>
+        </tr>
+        <tr>
+          <td>tanh(x)</td>
+          <td>Returns the hyperbolic tangent of a number</td>
+        </tr>
+        <tr>
+          <td>trunc(x)</td>
+          <td>Returns the integer part of a number (x)</td>
+        </tr>
+        </tbody>
+    </table>
+    <p id="output"></p>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

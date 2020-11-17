@@ -1,0 +1,179 @@
+@font-face {
+  font-family: 'MonumentGrotesk';
+  src: url("fonts/MonumentGrotesk-Medium.woff2") format("woff2"), url("fonts/MonumentGrotesk-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MonumentGrotesk';
+  src: url("fonts/MonumentGrotesk-Regular.woff2") format("woff2"), url("fonts/MonumentGrotesk-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'circular';
+  src: url(fonts/764604c.woff2) format("woff2"), url(fonts/5b4d068.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Radio Grotesk';
+  src: url("../fonts/RadioGrotesk-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/RadioGrotesk-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/RadioGrotesk-Regular.woff") format("woff"), url("../fonts/RadioGrotesk-Regular.ttf") format("truetype"), url("../fonts/RadioGrotesk-Regular.svg") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Radio Grotesk', sans-serif;
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 20px;
+}
+
+body {
+  padding: 4vw;
+  background: #ccc;
+}
+
+h1 {
+  padding-bottom: 4vw;
+  font-size: 7vw;
+  line-height: 1;
+}
+
+input[type=text] {
+  all: unset;
+  font-size: 1em;
+  border: 2px solid white;
+  padding: 3px 7px;
+  line-height: 1;
+  margin-top: 5px;
+  max-width: 500px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  -webkit-transition: border .3s;
+  transition: border .3s;
+}
+
+input[type=text]:focus {
+  border: 2px solid black;
+}
+
+select {
+  all: unset;
+  -webkit-appearance: menulist;
+     -moz-appearance: menulist;
+          appearance: menulist;
+  white-space: pre;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1em;
+  border: 2px solid white;
+  padding: 3px;
+  line-height: 1;
+  margin-top: 5px;
+  border-radius: 0 !important;
+  width: 120px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  -webkit-transition: border .3s;
+  transition: border .3s;
+}
+
+select:focus {
+  border: 2px solid black;
+  border-radius: 0 !important;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 7px 20px;
+  border: 2px solid black;
+  -webkit-transition: background-color .3s, color .3s;
+  transition: background-color .3s, color .3s;
+  border-radius: calc(41px / 2);
+  margin-top: 5px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+}
+
+#form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#form * {
+  font-size: 1em;
+}
+
+#form select {
+  margin-bottom: 1em;
+}
+
+#form input {
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-size: 2em;
+  margin: 4vw 0 1em 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid black;
+}
+
+table th {
+  background: black;
+  color: white;
+}
+
+table th, table td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 4px 8px;
+}
+/*# sourceMappingURL=styles.css.map */
