@@ -47,7 +47,7 @@ h1 {
     font-size: 7vw;
     line-height: 1;
 }
-input[type=text] {
+input[type=text], input[type=number] {
     all: unset;
     font-size: 1em;
     border: 2px solid white;
