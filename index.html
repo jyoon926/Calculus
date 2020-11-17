@@ -15,6 +15,7 @@
             <option value="lram">LRAM</option>
             <option value="mram">MRAM</option>
             <option value="mram">RRAM</option>
+            <option value="trap">Trapazoidal</option>
         </select>
 
         <label for="left">a</label>
@@ -29,9 +30,11 @@
         <input onclick="calculateLRAM()" type="button" id="calculatelram" class="button" value="Calculate LRAM" />
         <input onclick="calculateMRAM()" type="button" id="calculatemram" class="button" value="Calculate MRAM" style="display:none;"/>
         <input onclick="calculateRRAM()" type="button" id="calculaterram" class="button" value="Calculate RRAM" style="display:none;" />
+        <input onclick="calculateTrap()" type="button" id="calculatetrap" class="button" value="Calculate Trapazoidal" style="display:none;" />
         
       <p id="output"><i>Answer</i></p>
     </form>
+
     <h3>Math Operations</h3>
     <table>
         <tbody><tr>
@@ -132,6 +135,11 @@
         </tr>
         </tbody>
     </table>
+
+    <div id="footer">
+      <p>© 2020. All rights reserved.</p>
+      <p>Designed and developed by Jacob Yoon</p>
+    </div>
 
     <div id="bg"></div>
 
