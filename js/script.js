@@ -31,7 +31,7 @@ function calculateRAM() {
         else if (s == "RRAM") {
             RRAM(parseFloat(this.a.value), parseFloat(this.b.value), parseFloat(this.n.value), this.function.value);
         }
-        else if (s == "Trapazoidal") {
+        else if (s == "Trapezoidal") {
             Trap(parseFloat(this.a.value), parseFloat(this.b.value), parseFloat(this.n.value), this.function.value);
         }
     }
