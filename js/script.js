@@ -11,7 +11,7 @@ function SetType() {
     else if (s == "RRAM") {
         document.getElementById("calculate").value = "Calculate RRAM";
     }
-    else if (s == "Trapazoidal") {
+    else if (s == "Trapezoidal") {
         document.getElementById("calculate").value = "Calculate Trapazoidal";
     }
     document.getElementById("output").innerHTML = "";
