@@ -32,7 +32,19 @@
         <label for="function">Function <i>- Ex: Math.sin(x + 4)</i></label>
         <input id="function" name="function" type="text" required />
 
-        <input onclick="calculateRAM()" type="button" id="calculate" class="button" value="Calculate LRAM" />
+        <div id="buttons">
+          <input onclick="calculateRAM()" type="button" id="calculate" class="button" value="Calculate LRAM" />
+          <input type="checkbox" name="help" id="help">
+          <label for="help" id="helpLabel">Having issues?</label>
+          <div id="helpBox">
+            <p class="top"><i>Common causes of issues:</i></p>
+            <p>-  Coefficients aren't supported. Use * instead.</p>
+            <p>-  Make sure all of the parentheses are accurate and paired.</p>
+            <p>-  Use ** for exponents, not ^.</p>
+            <p>-  This tool only supports one variable functions. Please only use <i>x</i>.</p>
+            <label for="help" id="helpClose">Close</label>
+          </div>
+        </div>
         
       <p id="output"></p>
     </form>
