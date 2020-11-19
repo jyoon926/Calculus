@@ -149,13 +149,15 @@ select {
         margin-top: 80px;
         padding: 1.5em;
         box-shadow: 0px 7px 15px -7px $dark;
-        .top {
-            margin-bottom: 0.5em;
-            font-size: 1.5em;
-        }
         p {
             margin-left: 13px;
             text-indent: -13px;
+        }
+        .top {
+            margin-bottom: 0.5em;
+            font-size: 1.5em;
+            margin-left: 0;
+            text-indent: 0;
         }
     }
     #help:checked ~ #helpBox {
