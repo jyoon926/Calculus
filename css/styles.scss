@@ -135,7 +135,7 @@ select {
         box-sizing: border-box;
         position: absolute;
         //background: linear-gradient(to bottom right, $light, $accent);
-        background: $light;
+        background: #E4CCC2;
         border-radius: 20px;
         transition-duration: .5s;
         pointer-events: none;
@@ -160,6 +160,12 @@ select {
             font-size: 1.5em;
             margin-left: 0;
             text-indent: 0;
+        }
+    }
+    @supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
+        #helpBox {
+          background-color: rgba(255, 255, 255, 0.25);
+          backdrop-filter: blur(10px);
         }
     }
     #help:checked ~ #helpBox {

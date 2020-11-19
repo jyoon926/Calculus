@@ -181,7 +181,7 @@ select:focus {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: absolute;
-  background: #e8d2c5;
+  background: #E4CCC2;
   border-radius: 20px;
   -webkit-transition-duration: .5s;
           transition-duration: .5s;
@@ -220,6 +220,14 @@ select:focus {
   font-size: 1.5em;
   margin-left: 0;
   text-indent: 0;
+}
+
+@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
+  #buttons #helpBox {
+    background-color: rgba(255, 255, 255, 0.25);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
 }
 
 #buttons #help:checked ~ #helpBox {
