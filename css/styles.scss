@@ -1,6 +1,6 @@
 $light: #e8d2c5;
 $dark: #22223b;
-$accent: #4a4e69;
+$accent:#c4958b;
 @font-face{
     font-family:'MonumentGrotesk';
     src:url("../fonts/MonumentGrotesk-Medium.woff2") format("woff2"),url("fonts/MonumentGrotesk-Medium.woff") format("woff");
@@ -134,7 +134,8 @@ select {
     #helpBox {
         box-sizing: border-box;
         position: absolute;
-        background: linear-gradient(to bottom right, $light, white);
+        //background: linear-gradient(to bottom right, $light, $accent);
+        background: $light;
         border-radius: 20px;
         transition-duration: .5s;
         pointer-events: none;
@@ -148,7 +149,8 @@ select {
         max-width: 650px;
         margin-top: 80px;
         padding: 1.5em;
-        box-shadow: 0px 7px 15px -7px $dark;
+        box-shadow: 0px 7px 13px -5px $dark;
+        border: 2px solid $dark;
         p {
             margin-left: 13px;
             text-indent: -13px;
@@ -297,5 +299,5 @@ table {
     position: fixed;
     top: 0; left: 0;
     background: radial-gradient(ellipse at top, $light, transparent),
-    radial-gradient(ellipse at bottom, #c4958b, transparent);
+    radial-gradient(ellipse at bottom, $accent, transparent);
 }
