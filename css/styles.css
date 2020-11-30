@@ -325,6 +325,13 @@ table th {
   background: linear-gradient(to top left, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0));
 }
 
+#view-code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px !important;
+}
+
 #footer {
   width: 100%;
   display: -webkit-box;
@@ -382,7 +389,7 @@ table th {
   #footer p {
     line-height: 1.3;
     text-align: center;
-    font-size: .75em;
+    font-size: .85em;
   }
   #buttons {
     display: -webkit-box;
@@ -418,4 +425,3 @@ table th {
   left: 0;
   background: radial-gradient(ellipse at top, #e8d2c5, transparent), radial-gradient(ellipse at bottom, #c4958b, transparent);
 }
-/*# sourceMappingURL=styles.css.map */
